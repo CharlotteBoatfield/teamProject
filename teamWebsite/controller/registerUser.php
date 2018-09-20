@@ -20,4 +20,4 @@ if($stmt->rowCount() == 0) {
 }
 ?>
 
-<a href="../view/html/login.html">Back to login</a>
+<a href="../view/html/register.html">Back to registration</a>
