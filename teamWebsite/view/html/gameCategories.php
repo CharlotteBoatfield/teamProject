@@ -25,13 +25,8 @@
 	<div class="searchPosts">
 		<a href="functions.php?showid=listCategory" target="altdiv">Search Categories</a>
 	</div>
-	<script>
-		$('#altdiv').load(functions.php?listCategory);
-
-	</script>
 	<section class="content">
 		<div class="list-group">
-			<div id="altdiv"></div>
 			<a href="#" class="list-group-item list-group-item-action">
     Game 1
   </a>
@@ -41,7 +36,10 @@
 			<a href="#" class="list-group-item list-group-item-action">Game 5</a>
 		</div>
 	</section>
-	<footer>Team</footer>
+	<footer>Team
+	<?php
+		include("../../controller/footer.php")
+			?></footer>
 </body>
 
 </html>
