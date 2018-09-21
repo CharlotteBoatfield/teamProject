@@ -12,34 +12,30 @@
 	</head>
 	<body>
 	<nav class="nav">
-		<a class="nav-link" href="index.html">Home</a>
+		<a class="nav-link" href="../../index.php">Home</a>
 		<a class="nav-link" href="gameCategories.html">Game Categories</a>
-		<a class="nav-link" href="newFriendInfo.html">New Friend Information</a>
-		<a class="nav-link" href="login.html">Login</a>
-		<a class="nav-link" href="contact.html">Contact</a>
+		<a class="nav-link" href="newFriendInfo.php">New Friend Information</a>
+		<a class="nav-link active" href="login.php">Login</a>
+		<a class="nav-link" href="contact.php">Contact</a>
 		</nav>
 			<section class="content">
-	<form>
-		<legend>Register</legend>
-		<div class="form-group">
-			<label for="email">Email</label>
-			<input type="email" class="form-control" id="username" name="username">
-		</div>
+	<form action="../../controller/loginUser.php" method="POST">
+		<legend>Log In</legend>
 		<div class="form-group">
 			<label for="username">Username</label>
 			<input type="text" class="form-control" id="username" name="username">
 		</div>
 		<div class="form-group">
 			<label for="password">Password</label>
-			<input type="password" id="password" class="form-control">
+			<input type="password" name="password" id="password" class="form-control">
 		</div>
-		<div class="form-group">
-			<label for="passwordCheck">Confirm Password</label>
-			<input type="password" id="passwordCheck" class="form-control">
-		</div>
-		<button type="submit" class="btn btn-primary">Sign Up</button>
+		<button type="submit" class="btn btn-primary">Log In</button>
+		<a href="register.html">Don't have an account?</a>
 	</form>
 		</section>
-		<footer>FriendFinder</footer>
+		<footer>Team
+		<?php
+		include("../../controller/footer.php")
+			?></footer>
 	</body>
 </html>

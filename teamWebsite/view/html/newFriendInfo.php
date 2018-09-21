@@ -10,7 +10,9 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
 	</script>
 </head>
-
+<?php
+  //      if (isset($_SESSION["login"]) != 'true') header('location:login.php');
+  //      ?>
 <body>
 	<nav class="nav">
 		<a class="nav-link" href="../../index.html">Home</a>
@@ -48,6 +50,10 @@
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
 	</section>
-	<footer>Team</footer>
+	<footer>Team
+	<?php
+		include("../../controller/footer.php")
+			?>
+	</footer>
 </body>
 </html>
