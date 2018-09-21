@@ -1,3 +1,7 @@
+<?php
+$conn = new PDO("mysql:host=localhost;dbname=teamDatabase", 'root', 'root');
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -12,27 +16,34 @@
 	</head>
 	<body>
 	<nav class="nav">
-		<a class="nav-link" href="../../index.html">Home</a>
+		<a class="nav-link" href="index.html">Home</a>
 		<a class="nav-link" href="gameCategories.html">Game Categories</a>
 		<a class="nav-link" href="newFriendInfo.html">New Friend Information</a>
-		<a class="nav-link active" href="login.html">Login</a>
+		<a class="nav-link" href="login.html">Login</a>
 		<a class="nav-link" href="contact.html">Contact</a>
 		</nav>
 			<section class="content">
-	<form>
-		<legend>Log In</legend>
+	<form action="../../controller/registerUser.php" method="post">
+		<legend>Register</legend>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" class="form-control" id="email" name="email">
+		</div>
 		<div class="form-group">
 			<label for="username">Username</label>
-			<input type="email" class="form-control" id="username" name="username">
+			<input type="text" class="form-control" id="username" name="username">
 		</div>
 		<div class="form-group">
 			<label for="password">Password</label>
-			<input type="password" id="password" class="form-control">
+			<input type="password" name="password" id="password" class="form-control">
 		</div>
-		<button type="submit" class="btn btn-primary">Log In</button>
-		<button type="Register" class="btn btn-primary"><a href="register.html">Register</a></button>
+		<button type="submit" class="btn btn-primary">Sign Up</button>
 	</form>
 		</section>
-		<footer>Team</footer>
+		<footer>Team
+		<?php
+		include("../../controller/footer.php")
+			?>
+		</footer>
 	</body>
 </html>
