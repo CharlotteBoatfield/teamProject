@@ -4,13 +4,8 @@ Team
 Team is a service for gamers who lack the friends to play multiplayer games. Codes to connect players are uploaded, acting as a way for them to connect and play together.
 
 Business Rules
-To upload their information or make a request for a new category to be added, the user must be logged in.
 
-The administrator is the only one who can create new categories, delete categories, change categories and delete posts.
-
-Passwords must be at least 8 characters long and include a number, capital letter, and lowercase letter.
-
-Only account-holding users can view posts.
+To upload their information or make a request for a new category to be added, the user must be logged in. The administrator is the only one who can create new categories, delete categories, change categories and delete posts. Passwords must be at least 8 characters long and include a number, capital letter, and lowercase letter. Only account-holding users can view posts.
 
 Getting Started
 
